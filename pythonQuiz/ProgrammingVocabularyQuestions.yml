@@ -1,0 +1,360 @@
+- alternatives:
+  - Byte
+  - Input
+  - Variable
+  answer: Bit
+  numCorrect: 1
+  question: The most basic unit of information, it represents a single 0 or 1 of digital
+    information.
+- alternatives:
+  - Pixel
+  - Character
+  - String
+  answer: Byte
+  numCorrect: 1
+  question: "Is a unit of information that consists of 8 bits. Typically a single\
+    \ character of any kind takes up a single Byte\xE2\u20AC\u2122s worth of space\
+    \ in a computer's memory."
+- alternatives:
+  - Integer
+  - Program
+  - Variable
+  answer: Pixel
+  numCorrect: 0
+  question: An individual point of light on a display. Many pixels grouped together
+    make up a display. For instance a 1080p HD display is composed of a grid of 1,920
+    by 1,080 pixels for a total of 2,073,600 pixels. Pixels are often referred to
+    by the abbreviation px.
+- alternatives:
+  - Output
+  - Variable
+  - Character
+  answer: Input
+  numCorrect: 0
+  question: Taking in data from either a user or a program.
+- alternatives:
+  - Input
+  - Program
+  - Character
+  answer: Output
+  numCorrect: 0
+  question: Returning the manipulated data either to the user or another program.
+- alternatives:
+  - Output
+  - Input
+  - String
+  answer: Process
+  numCorrect: 0
+  question: Manipulating the data taken into the program.
+- alternatives:
+  - Process
+  - Array
+  - Function
+  answer: Program
+  numCorrect: 0
+  question: This consists of 3 parts input, process, and output.
+- alternatives:
+  - Process
+  - Array
+  - Function
+  answer: Program
+  numCorrect: 0
+  question: This consists of 3 parts input, process, and output.
+- alternatives:
+  - Input
+  - Output
+  - Process
+  answer: Variable
+  numCorrect: 0
+  question: A data object that contains a value to be used by the program.
+- alternatives:
+  - String
+  - Integer
+  - Short
+  answer: Character
+  numCorrect: 1
+  question: Typically a data object that contains a single letter of the alphabet
+    though it can be any single text value including things like numbers and punctuations.
+- alternatives:
+  - Program
+  - Integer
+  - Double
+  answer: String
+  numCorrect: 1
+  question: More than one character value.
+- alternatives:
+  - List
+  - Array
+  - Pixel
+  answer: Integer
+  numCorrect: 0
+  question: Any whole number value up to 2147483647 and down to -2147483647.
+- alternatives:
+  - Boolean
+  - Integer
+  - Short
+  answer: Short
+  numCorrect: 0
+  question: A whole number of limited size when compared to an integer or a long.
+    It is 16 bits or 2 bytes in length.
+- alternatives:
+  - Byte
+  - Array
+  - Boolean
+  answer: Long
+  numCorrect: 0
+  question: Any whole number of greater size than either an integer or a short can
+    hold. It is 32 bits or 4 bytes in length.
+- alternatives:
+  - Character
+  - Program
+  - Double
+  answer: Boolean
+  numCorrect: 0
+  question: A statement that can be either True or False.
+- alternatives:
+  - Double
+  - Integer
+  - Long
+  answer: Float
+  numCorrect: 0
+  question: A variable type that can contain any numeric value from -9999999 to 9999999
+    and all of the numbers in between but can only hold 7 digits total so 8888888.88
+    is not valid while 8888.888 is.
+- alternatives:
+  - Character
+  - Program
+  - Integer
+  answer: Double
+  numCorrect: 0
+  question: A decimal number twice the size of those that a float can contain.
+- alternatives:
+  - Long
+  - String
+  - Character
+  answer: List
+  numCorrect: 0
+  question: A group of values all contained under the same data object separated by
+    commas.
+- alternatives:
+  - List
+  - Array
+  - Long
+  answer: Dictionary
+  numCorrect: 0
+  question: A group of values that all consist of two items, a key value and a data
+    value. Each of the key value pairs are separated by a comma.
+- alternatives:
+  - List
+  - Dictionary
+  - Long
+  answer: Array
+  numCorrect: 0
+  question: A group of values that can consist of complex data objects that will often
+    have key value pair data objects attached to another key value pair or nested
+    dictionaries.
+- alternatives:
+  - For Loop
+  - Array
+  - Do While Loop
+  answer: If Then Statement
+  numCorrect: 0
+  question: This kind of logic statement checks whether a variable is in a given state
+    and then executes some operation. If the variable isn't in the state the statement
+    is checking it will either execute some other operation or do nothing.
+- alternatives:
+  - Do While Loop
+  - For Each Loop
+  - If Then Statement
+  answer: For Loop
+  numCorrect: 0
+  question: This kind of logic statement will perform the same operation over and
+    over. A given numeric value will either be increasing or decreasing each time
+    the loop runs until a given value is reached and your program exits the loop.
+- alternatives:
+  - Do While Loop
+  - Array
+  - If Then Statement
+  answer: For Each Loop
+  numCorrect: 0
+  question: This kind of logic statement is used to step through all of the items
+    contained in a list, array, or more complex but similarly structured data object.
+    For each item contained in the data object the loop will execute some logic until
+    it has touched every item in the data object.
+- alternatives:
+  - For Loop
+  - For Each Loop
+  - If Then Statement
+  answer: While Loop
+  numCorrect: 0
+  question: This kind of logic statement will perform an operation until the statement
+    that initiated the loop is no-longer valid. If the initial statement is not true
+    none of the code contained within the while loop will run.
+- alternatives:
+  - For Loop
+  - For Each Loop
+  - If Then Statement
+  answer: Do While Loop
+  numCorrect: 0
+  question: This kind of logic statement will execute at least once before checking
+    to see if the while condition is true or not. If the while condition is still
+    valid after the initial code execution it will continue to execute until the while
+    condition is no-longer true.
+- alternatives:
+  - Integer
+  - Array
+  - Variable
+  answer: Function
+  numCorrect: 0
+  question: Refers to a group of instructions usually given a specific name so that
+    they can then be referenced elsewhere in your application. Functions can be anonymous
+    (meaning they do not have a specific name to allow them be referenced later) but
+    this means they have to be used during the applications run time and that they
+    cannot be referenced elsewhere in your program.
+- alternatives:
+  - Character
+  - List
+  - Dictionary
+  answer: Arguments
+  numCorrect: 0
+  question: This refers to the values that are passed to a function when you call
+    it.
+- alternatives:
+  - Class
+  - Object Oriented Programming
+  - Inheritance
+  answer: Procedural Programming
+  numCorrect: 0
+  question: Is a top down approach to writing a program. Any variable or function
+    value that is called by your application must have already been created and or
+    populated further up your application. The format of a program written this way
+    is similar to how a traditional novel would be written with all of the necessary
+    plot points and characters fleshed out before they are referenced later in the
+    text.
+- alternatives:
+  - Procedural Programming
+  - Object Oriented Programming
+  - Inheritance
+  answer: Class
+  numCorrect: 0
+  question: A core building block in Object Oriented Programming, they define all
+    of the values and functions of a given object. For instance the car class would
+    contain within it functions that defined things like doors, wheels, and engine
+    types and variables that contained fixed values like wheel, seat, or cupholder.
+- alternatives:
+  - Method
+  - Object Oriented Programming
+  - Inheritance
+  answer: Object
+  numCorrect: 0
+  question: This is a particular instance of a class.
+- alternatives:
+  - Dictionary
+  - Array
+  - Arguments
+  answer: Method
+  numCorrect: 0
+  question: A function contained within an object.
+- alternatives:
+  - Object
+  - Class
+  - Polymorphism
+  answer: Field or Attribute
+  numCorrect: 0
+  question: A variable that is either referenced or set by a method within an object.
+- alternatives:
+  - Procedural Programming
+  - Arguments
+  - Function
+  answer: Object Oriented Programming
+  numCorrect: 0
+  question: A style of programming that allows functions and variables to be called
+    from anywhere within the entire application and for the values returned by those
+    variables or functions to be changed. This style of programming allows code written
+    once to be reused throughout the rest of the application.
+- alternatives:
+  - Algorithm
+  - Array
+  - Arguments
+  answer: Constructor
+  numCorrect: 0
+  question: This is any call that creates a new instance of an Object or Class. The
+    keyword new is placed in front of the name of the Object or Class to indicate
+    this is a new instance of it. In Python for instance this is the __init__ function
+    you will often see referenced as the first function in a class.
+- alternatives:
+  - Algorithm
+  - Recursion
+  - Arguments
+  answer: Deconstructor
+  numCorrect: 0
+  question: This is sometimes called at the end of class to remove from memory or
+    clear any variable values you do not want to store for later use. These are often
+    called automatically by the programming language.
+- alternatives:
+  - Recursion
+  - Polymorphism
+  - Arguments
+  answer: Inheritance
+  numCorrect: 1
+  question: When a class has many of its attributes (variable values) set by the parent
+    class which it is a subclass of.
+- alternatives:
+  - Loop
+  - Method
+  - Arguments
+  answer: Polymorphism
+  numCorrect: 0
+  question: Refers to the ability of variables that are members of a class within
+    your application can be assigned different data types and values.
+- alternatives:
+  - Callbacks
+  - Arguments
+  - Inheritance
+  answer: Algorithm
+  numCorrect: 0
+  question: A series of steps that is followed to achieve a particular outcome.
+- alternatives:
+  - Algorithm
+  - Method
+  - Arguments
+  answer: Loop
+  numCorrect: 0
+  question: A function that will run against every value in a multi value data object
+    until some stop criteria is met such as the last item in a list or dictionary
+    object.
+- alternatives:
+  - Callbacks
+  - Inheritance
+  - Arguments
+  answer: Recursion
+  numCorrect: 0
+  question: A type of function that will take its initial output and then run it back
+    through the same operation until some criteria is met such as all of the items
+    in a list object being in a certain order.
+- alternatives:
+  - Array
+  - Inheritance
+  - Arguments
+  answer: Callbacks
+  numCorrect: 0
+  question: Functions that provide the value for other functions to utilize when they
+    execute.
+- alternatives:
+  - Callbacks
+  - Inheritance
+  - Arguments
+  answer: Recursion
+  numCorrect: 0
+  question: A type of function that will take its initial output and then run it back
+    through the same operation until some criteria is met such as all of the items
+    in a list object being in a certain order.
+- alternatives:
+  - Callbacks
+  - Inheritance
+  - Arguments
+  answer: Recursion
+  numCorrect: 0
+  question: A type of function that will take its initial output and then run it back
+    through the same operation until some criteria is met such as all of the items
+    in a list object being in a certain order.
