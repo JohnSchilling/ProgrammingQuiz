@@ -65,14 +65,14 @@
   - Output
   - Process
   answer: Variable
-  numCorrect: 0
+  numCorrect: 1
   question: A data object that contains a value to be used by the program.
 - alternatives:
   - String
   - Integer
   - Short
   answer: Character
-  numCorrect: 1
+  numCorrect: 2
   question: Typically a data object that contains a single letter of the alphabet
     though it can be any single text value including things like numbers and punctuations.
 - alternatives:
@@ -110,7 +110,7 @@
   - Program
   - Double
   answer: Boolean
-  numCorrect: 0
+  numCorrect: 1
   question: A statement that can be either True or False.
 - alternatives:
   - Double
@@ -133,7 +133,7 @@
   - String
   - Character
   answer: List
-  numCorrect: 0
+  numCorrect: 2
   question: A group of values all contained under the same data object separated by
     commas.
 - alternatives:
@@ -141,7 +141,7 @@
   - Array
   - Long
   answer: Dictionary
-  numCorrect: 0
+  numCorrect: 1
   question: A group of values that all consist of two items, a key value and a data
     value. Each of the key value pairs are separated by a comma.
 - alternatives:
@@ -167,7 +167,7 @@
   - For Each Loop
   - If Then Statement
   answer: For Loop
-  numCorrect: 0
+  numCorrect: 1
   question: This kind of logic statement will perform the same operation over and
     over. A given numeric value will either be increasing or decreasing each time
     the loop runs until a given value is reached and your program exits the loop.
@@ -176,7 +176,7 @@
   - Array
   - If Then Statement
   answer: For Each Loop
-  numCorrect: 0
+  numCorrect: 1
   question: This kind of logic statement is used to step through all of the items
     contained in a list, array, or more complex but similarly structured data object.
     For each item contained in the data object the loop will execute some logic until
@@ -253,7 +253,7 @@
   - Array
   - Arguments
   answer: Method
-  numCorrect: 0
+  numCorrect: 1
   question: A function contained within an object.
 - alternatives:
   - Object
@@ -267,7 +267,7 @@
   - Arguments
   - Function
   answer: Object Oriented Programming
-  numCorrect: 0
+  numCorrect: 1
   question: A style of programming that allows functions and variables to be called
     from anywhere within the entire application and for the values returned by those
     variables or functions to be changed. This style of programming allows code written
@@ -304,7 +304,7 @@
   - Method
   - Arguments
   answer: Polymorphism
-  numCorrect: 0
+  numCorrect: 2
   question: Refers to the ability of variables that are members of a class within
     your application can be assigned different data types and values.
 - alternatives:
@@ -312,7 +312,7 @@
   - Arguments
   - Inheritance
   answer: Algorithm
-  numCorrect: 0
+  numCorrect: 1
   question: A series of steps that is followed to achieve a particular outcome.
 - alternatives:
   - Algorithm
@@ -328,7 +328,7 @@
   - Inheritance
   - Arguments
   answer: Recursion
-  numCorrect: 0
+  numCorrect: 1
   question: A type of function that will take its initial output and then run it back
     through the same operation until some criteria is met such as all of the items
     in a list object being in a certain order.
@@ -354,7 +354,7 @@
   - Inheritance
   - Arguments
   answer: Recursion
-  numCorrect: 0
+  numCorrect: 1
   question: A type of function that will take its initial output and then run it back
     through the same operation until some criteria is met such as all of the items
     in a list object being in a certain order.
