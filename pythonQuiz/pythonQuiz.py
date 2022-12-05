@@ -2,11 +2,12 @@ import random
 import yaml
 import pathlib
 from tkinter import *
+from tkinter import messagebox
 from PIL import ImageTk,Image
 from string import ascii_lowercase
 
 root = Tk()
-root.title('Frame Test')
+root.title('Programming Quiz')
 photo = PhotoImage(file = 'robot.png')
 root.iconphoto(False, photo)
 answerLabels = []
@@ -24,11 +25,12 @@ def run_quiz():
         #print(f"\nQuestion {num}:")
         num_correct += ask_question(question)
 
-    for lb in answerLabels:
-        lb.destroy()
+    #for lb in answerLabels:
+        #lb.destroy()
 
-    label = Label(root, text="You got {num_correct} correct out of {num} questions")
-    label.pack()
+    #label = Label(root, text="You got {num_correct} correct out of {num} questions")
+    #label.pack()
+    messagebox.showinfo("", "You got {} correct out of {} questions.".format(num_correct, num))
     #print(f"\nYou got {num_correct} correct out of {num} questions")
     f = open(questionFile,'w')
     yaml.dump(data, f)
@@ -64,25 +66,27 @@ def ask_question(question):
     if answer == correct_answer:
         if (numTimesCorrect != 5):
             question["numCorrect"] = numTimesCorrect + 1
-        label = Label(root, text="Correct!")
-        label.pack()
-        answerLabels.append(label)
+        messagebox.showinfo("", "Correct!")
+        #label = Label(root, text="Correct!")
+        #label.pack()
+        #answerLabels.append(label)
         #print("Correct!")
         return 1
     else:
         if (numTimesCorrect != 0):
             question["numCorrect"] = numTimesCorrect - 1
+        messagebox.showinfo("", "The answer is {}, not {}".format(correct_answer, answer))
         #print(f"The answer is {correct_answer!r}, not {answer!r}")
-        label = Label(root, text="The answer is {correct_answer}, not {answer}")
-        label.pack()
-        answerLabels.append(label)
+        #label = Label(root, text="The answer is {correct_answer}, not {answer}")
+        #label.pack()
+        #answerLabels.append(label)
         return 0
 
 def get_answer(question, alternatives):
     #print(f"{question}")
     buttons = []
     labels = []
-    label = Label(root, text=question)
+    label = Label(root, text=question, wraplength=500, justify="left")
     label.pack()
     labels.append(label)
     labeled_alternatives = dict(zip(ascii_lowercase, alternatives))

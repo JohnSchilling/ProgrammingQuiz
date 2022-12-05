@@ -3,7 +3,7 @@
   - Input
   - Variable
   answer: Bit
-  numCorrect: 1
+  numCorrect: 2
   question: The most basic unit of information, it represents a single 0 or 1 of digital
     information.
 - alternatives:
@@ -11,10 +11,9 @@
   - Character
   - String
   answer: Byte
-  numCorrect: 1
-  question: "Is a unit of information that consists of 8 bits. Typically a single\
-    \ character of any kind takes up a single Byte\xE2\u20AC\u2122s worth of space\
-    \ in a computer's memory."
+  numCorrect: 0
+  question: Is a unit of information that consists of 8 bits. Typically a single character
+    of any kind takes up a single Bytes worth of space in a computer's memory.
 - alternatives:
   - Integer
   - Program
@@ -30,14 +29,14 @@
   - Variable
   - Character
   answer: Input
-  numCorrect: 0
+  numCorrect: 1
   question: Taking in data from either a user or a program.
 - alternatives:
   - Input
   - Program
   - Character
   answer: Output
-  numCorrect: 0
+  numCorrect: 2
   question: Returning the manipulated data either to the user or another program.
 - alternatives:
   - Output
@@ -54,18 +53,11 @@
   numCorrect: 0
   question: This consists of 3 parts input, process, and output.
 - alternatives:
-  - Process
-  - Array
-  - Function
-  answer: Program
-  numCorrect: 0
-  question: This consists of 3 parts input, process, and output.
-- alternatives:
   - Input
   - Output
   - Process
   answer: Variable
-  numCorrect: 1
+  numCorrect: 2
   question: A data object that contains a value to be used by the program.
 - alternatives:
   - String
@@ -158,7 +150,7 @@
   - Array
   - Do While Loop
   answer: If Then Statement
-  numCorrect: 0
+  numCorrect: 1
   question: This kind of logic statement checks whether a variable is in a given state
     and then executes some operation. If the variable isn't in the state the statement
     is checking it will either execute some other operation or do nothing.
@@ -167,7 +159,7 @@
   - For Each Loop
   - If Then Statement
   answer: For Loop
-  numCorrect: 1
+  numCorrect: 2
   question: This kind of logic statement will perform the same operation over and
     over. A given numeric value will either be increasing or decreasing each time
     the loop runs until a given value is reached and your program exits the loop.
@@ -189,7 +181,7 @@
   numCorrect: 0
   question: This kind of logic statement will perform an operation until the statement
     that initiated the loop is no-longer valid. If the initial statement is not true
-    none of the code contained within the while loop will run.
+    none of the code contained within will run.
 - alternatives:
   - For Loop
   - For Each Loop
@@ -216,7 +208,7 @@
   - List
   - Dictionary
   answer: Arguments
-  numCorrect: 0
+  numCorrect: 1
   question: This refers to the values that are passed to a function when you call
     it.
 - alternatives:
@@ -267,7 +259,7 @@
   - Arguments
   - Function
   answer: Object Oriented Programming
-  numCorrect: 1
+  numCorrect: 2
   question: A style of programming that allows functions and variables to be called
     from anywhere within the entire application and for the values returned by those
     variables or functions to be changed. This style of programming allows code written
@@ -277,7 +269,7 @@
   - Array
   - Arguments
   answer: Constructor
-  numCorrect: 0
+  numCorrect: 1
   question: This is any call that creates a new instance of an Object or Class. The
     keyword new is placed in front of the name of the Object or Class to indicate
     this is a new instance of it. In Python for instance this is the __init__ function
@@ -296,7 +288,7 @@
   - Polymorphism
   - Arguments
   answer: Inheritance
-  numCorrect: 1
+  numCorrect: 2
   question: When a class has many of its attributes (variable values) set by the parent
     class which it is a subclass of.
 - alternatives:
@@ -328,7 +320,7 @@
   - Inheritance
   - Arguments
   answer: Recursion
-  numCorrect: 1
+  numCorrect: 2
   question: A type of function that will take its initial output and then run it back
     through the same operation until some criteria is met such as all of the items
     in a list object being in a certain order.
@@ -337,7 +329,7 @@
   - Inheritance
   - Arguments
   answer: Callbacks
-  numCorrect: 0
+  numCorrect: 1
   question: Functions that provide the value for other functions to utilize when they
     execute.
 - alternatives:
