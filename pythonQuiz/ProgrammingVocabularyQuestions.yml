@@ -3,7 +3,7 @@
   - Input
   - Variable
   answer: Bit
-  numCorrect: 2
+  numCorrect: 3
   question: The most basic unit of information, it represents a single 0 or 1 of digital
     information.
 - alternatives:
@@ -20,16 +20,13 @@
   - Variable
   answer: Pixel
   numCorrect: 0
-  question: An individual point of light on a display. Many pixels grouped together
-    make up a display. For instance a 1080p HD display is composed of a grid of 1,920
-    by 1,080 pixels for a total of 2,073,600 pixels. Pixels are often referred to
-    by the abbreviation px.
+  question: An individual point of light on a display.
 - alternatives:
   - Output
   - Variable
   - Character
   answer: Input
-  numCorrect: 1
+  numCorrect: 2
   question: Taking in data from either a user or a program.
 - alternatives:
   - Input
@@ -50,7 +47,7 @@
   - Array
   - Function
   answer: Program
-  numCorrect: 0
+  numCorrect: 1
   question: This consists of 3 parts input, process, and output.
 - alternatives:
   - Input
@@ -79,12 +76,12 @@
   - Array
   - Pixel
   answer: Integer
-  numCorrect: 0
+  numCorrect: 2
   question: Any whole number value up to 2147483647 and down to -2147483647.
 - alternatives:
   - Boolean
   - Integer
-  - Short
+  - Long
   answer: Short
   numCorrect: 0
   question: A whole number of limited size when compared to an integer or a long.
@@ -125,7 +122,7 @@
   - String
   - Character
   answer: List
-  numCorrect: 2
+  numCorrect: 3
   question: A group of values all contained under the same data object separated by
     commas.
 - alternatives:
@@ -150,7 +147,7 @@
   - Array
   - Do While Loop
   answer: If Then Statement
-  numCorrect: 1
+  numCorrect: 2
   question: This kind of logic statement checks whether a variable is in a given state
     and then executes some operation. If the variable isn't in the state the statement
     is checking it will either execute some other operation or do nothing.
@@ -208,7 +205,7 @@
   - List
   - Dictionary
   answer: Arguments
-  numCorrect: 1
+  numCorrect: 2
   question: This refers to the values that are passed to a function when you call
     it.
 - alternatives:
@@ -230,9 +227,7 @@
   answer: Class
   numCorrect: 0
   question: A core building block in Object Oriented Programming, they define all
-    of the values and functions of a given object. For instance the car class would
-    contain within it functions that defined things like doors, wheels, and engine
-    types and variables that contained fixed values like wheel, seat, or cupholder.
+    of the values and functions of a given object.
 - alternatives:
   - Method
   - Object Oriented Programming
@@ -259,7 +254,7 @@
   - Arguments
   - Function
   answer: Object Oriented Programming
-  numCorrect: 2
+  numCorrect: 3
   question: A style of programming that allows functions and variables to be called
     from anywhere within the entire application and for the values returned by those
     variables or functions to be changed. This style of programming allows code written
@@ -296,9 +291,9 @@
   - Method
   - Arguments
   answer: Polymorphism
-  numCorrect: 2
+  numCorrect: 3
   question: Refers to the ability of variables that are members of a class within
-    your application can be assigned different data types and values.
+    your application to be assigned different data types and values.
 - alternatives:
   - Callbacks
   - Arguments
@@ -332,21 +327,3 @@
   numCorrect: 1
   question: Functions that provide the value for other functions to utilize when they
     execute.
-- alternatives:
-  - Callbacks
-  - Inheritance
-  - Arguments
-  answer: Recursion
-  numCorrect: 0
-  question: A type of function that will take its initial output and then run it back
-    through the same operation until some criteria is met such as all of the items
-    in a list object being in a certain order.
-- alternatives:
-  - Callbacks
-  - Inheritance
-  - Arguments
-  answer: Recursion
-  numCorrect: 1
-  question: A type of function that will take its initial output and then run it back
-    through the same operation until some criteria is met such as all of the items
-    in a list object being in a certain order.

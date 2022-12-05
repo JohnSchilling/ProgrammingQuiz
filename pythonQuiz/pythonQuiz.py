@@ -10,7 +10,22 @@ root = Tk()
 root.title('Programming Quiz')
 photo = PhotoImage(file = 'robot.png')
 root.iconphoto(False, photo)
-answerLabels = []
+root.geometry("600x300")
+
+def center(win):
+    win.update_idletasks()
+    width = win.winfo_width()
+    frm_width = win.winfo_rootx() - win.winfo_x()
+    win_width = width + 2 * frm_width
+    height = win.winfo_height()
+    titlebar_height = win.winfo_rooty() - win.winfo_y()
+    win_height = height + titlebar_height + frm_width
+    x = win.winfo_screenwidth() // 2 - win_width // 2
+    y = win.winfo_screenheight() // 2 - win_height // 2
+    win.geometry('{}x{}+{}+{}'.format(width, height, x, y))
+    win.deiconify()
+
+center(root)
 
 questionFile = 'ProgrammingVocabularyQuestions.yml'
 with open(questionFile, 'r+') as file:
@@ -22,16 +37,9 @@ def run_quiz():
     num_correct = 0
     
     for num, question in enumerate(questions, start=1):
-        #print(f"\nQuestion {num}:")
         num_correct += ask_question(question)
 
-    #for lb in answerLabels:
-        #lb.destroy()
-
-    #label = Label(root, text="You got {num_correct} correct out of {num} questions")
-    #label.pack()
     messagebox.showinfo("", "You got {} correct out of {} questions.".format(num_correct, num))
-    #print(f"\nYou got {num_correct} correct out of {num} questions")
     f = open(questionFile,'w')
     yaml.dump(data, f)
     f.close()
@@ -67,46 +75,36 @@ def ask_question(question):
         if (numTimesCorrect != 5):
             question["numCorrect"] = numTimesCorrect + 1
         messagebox.showinfo("", "Correct!")
-        #label = Label(root, text="Correct!")
-        #label.pack()
-        #answerLabels.append(label)
-        #print("Correct!")
+
         return 1
     else:
         if (numTimesCorrect != 0):
             question["numCorrect"] = numTimesCorrect - 1
         messagebox.showinfo("", "The answer is {}, not {}".format(correct_answer, answer))
-        #print(f"The answer is {correct_answer!r}, not {answer!r}")
-        #label = Label(root, text="The answer is {correct_answer}, not {answer}")
-        #label.pack()
-        #answerLabels.append(label)
+
         return 0
 
 def get_answer(question, alternatives):
-    #print(f"{question}")
     buttons = []
     labels = []
     label = Label(root, text=question, wraplength=500, justify="left")
-    label.pack()
+    label.pack(pady=(0,20))
     labels.append(label)
     labeled_alternatives = dict(zip(ascii_lowercase, alternatives))
     answer = StringVar()
     answer.set(' ')
+    
     for label, alternative in labeled_alternatives.items():
-        #print(f"  {label}) {alternative}")
         button = Radiobutton(root, text=alternative, variable=answer, value=label)
         button.pack(anchor=W)
         buttons.append(button)
 
     root.wait_variable(answer)
-    #answer_label = input("\nChoice? ")
     answer_label = answer.get()
     for rb in buttons:
         rb.destroy()
     for lb in labels:
         lb.destroy()
-    #while answer_label not in labeled_alternatives:
-        #print(f"Please answer one of {', '.join(labeled_alternatives)}")
 
     return labeled_alternatives[answer_label]
 
